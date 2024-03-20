@@ -136,6 +136,7 @@ if __name__ == "__main__":
     logging.info("End of processing")
 
     if not active_cookies:
+        print("No active cookies found for date:", target_date)
         logging.info("No active cookies found for date: %s", target_date)
     else:
         logging.info("Most active cookies for date %s: %s",
